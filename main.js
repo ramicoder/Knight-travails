@@ -40,5 +40,7 @@ function knightMoves([x, y], [a, b]) {
 function isValid(row, col) {
     return row >= 0 && row <= 7 && col >= 0 && col <= 7;
 }
+let path = knightMoves([0,0], [1,7]);
 
-console.log(knightMoves([0,0], [7,7]))
+console.log(path);
+console.log(`Knight moved ${path.length - 1} times!`)
